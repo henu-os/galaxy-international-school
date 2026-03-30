@@ -1,0 +1,109 @@
+/* ==========================================================================
+   GIS — Section layouts
+   ========================================================================== */
+
+.section-title {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.section-title.center {
+  text-align: center;
+  justify-items: center;
+}
+
+.section-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  max-width: 70ch;
+}
+
+.bg-cream {
+  background: var(--cream);
+}
+
+.bg-parchment {
+  background: var(--parchment);
+}
+
+.bg-cream-dark {
+  background: var(--cream-dark);
+}
+
+.bg-maroon {
+  background: var(--maroon-deep);
+  color: rgba(253, 248, 240, 0.92);
+}
+
+.bg-maroon h2,
+.bg-maroon h3 {
+  color: var(--gold-light);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.checklist li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(253, 248, 240, 0.55);
+  border: 1px solid rgba(139, 0, 0, 0.08);
+}
+
+.checklist i {
+  color: var(--gold);
+  margin-top: 3px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(139, 0, 0, 0.12);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 720px;
+}
+
+th,
+td {
+  padding: 14px 14px;
+  border-bottom: 1px solid rgba(139, 0, 0, 0.08);
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: rgba(139, 0, 0, 0.05);
+  font-family: var(--font-subheading);
+  font-weight: 700;
+  color: var(--maroon-deep);
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+

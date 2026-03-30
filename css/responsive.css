@@ -1,0 +1,67 @@
+/* ==========================================================================
+   GIS — Responsive audit (ALL media queries live here)
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 70px 0;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: var(--section-py-sm) 0;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    padding: 34px 0;
+  }
+
+  .hero__lottie {
+    height: min(360px, 52vh);
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 6vw, 2.5rem);
+  }
+
+  .hero__cta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
+  }
+
+  .ticker__track {
+    animation-duration: 18s;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .card:hover {
+    transform: none;
+  }
+  .stat {
+    padding: 22px 14px;
+  }
+  .stat__number {
+    font-size: 2.2rem;
+  }
+}
+

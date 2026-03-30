@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Galaxy International School — Best English Medium RBSE School in Auwa Pali, Rajasthan. Nursery to Class XII Science | JEE–NEET Coaching | Smart Classrooms | Hostel | Call: 9571943750" />
+  <meta name="keywords"
+    content="Galaxy International School Auwa, GIS Auwa Pali, RBSE school Pali Rajasthan, English medium school Auwa, JEE NEET coaching Auwa Pali, best school Marwar Junction, Nursery to XII school Rajasthan, gisprincipal77" />
+  <meta property="og:title" content="Galaxy International School — Auwa Pali" />
+  <meta property="og:description" content="Where Learning Meets Excellence" />
+  <meta property="og:image" content="images/logo.png" />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>Galaxy International School — Home | Auwa Pali</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Swiper (Testimonials) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+  
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- JS (global) -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/hero.js" defer></script>
+  <script src="js/counter.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement Bar -->
+  <div class="announcement" id="announcement">
+    <div class="container announcement__inner">
+      <div class="announcement__text">
+        🎓 Admissions Open 2026–27 — Nursery to Class XII | JEE–NEET Coaching | Call: 9571980013
+      </div>
+      <button class="announcement__close" id="announcementClose" aria-label="Dismiss announcement">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html" aria-label="Galaxy International School Home">
+        <img src="images/logo.png" alt="Galaxy International School logo" onerror="this.style.display='none'" />
+        <span class="brand__text">
+          <span class="brand__title">Galaxy International School</span>
+          <span class="brand__motto">Knowledge is Power</span>
+        </span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html" data-navlink="1">Home</a>
+        <a href="about.html" data-navlink="1">About</a>
+        <a href="academics.html" data-navlink="1">Academics</a>
+        <a href="admissions.html" data-navlink="1">Admissions</a>
+        <a href="facilities.html" data-navlink="1">Facilities</a>
+        <a href="faculty.html" data-navlink="1">Faculty</a>
+        <a href="gallery.html" data-navlink="1">Gallery</a>
+        <a href="contact.html" data-navlink="1">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn--outline" href="tel:+919571980013"><i class="fa-solid fa-phone"></i> Call Now</a>
+        <a class="btn btn--primary" href="admissions.html"><i class="fa-solid fa-graduation-cap"></i> Admission
+          Enquiry</a>
+        <button class="hamburger" id="navOpen" aria-label="Open menu" aria-haspopup="dialog">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Mobile Menu">
+    <div class="overlay__inner">
+      <div class="overlay__top">
+        <div class="overlay__brand">
+          <img src="images/logo.png" alt="GIS" onerror="this.style.display='none'" />
+          <div>
+            <div class="brand__title" style="color: var(--gold-light)">Galaxy International School</div>
+            <div class="brand__motto" style="color: rgba(253, 248, 240, 0.8)">Knowledge is Power</div>
+          </div>
+        </div>
+        <button class="overlay__close" id="navClose" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="overlay__nav" aria-label="Mobile">
+        <a href="index.html" data-navlink="1">Home</a>
+        <a href="about.html" data-navlink="1">About</a>
+        <a href="academics.html" data-navlink="1">Academics</a>
+        <a href="admissions.html" data-navlink="1">Admissions</a>
+        <a href="facilities.html" data-navlink="1">Facilities</a>
+        <a href="faculty.html" data-navlink="1">Faculty</a>
+        <a href="gallery.html" data-navlink="1">Gallery</a>
+        <a href="contact.html" data-navlink="1">Contact</a>
+      </nav>
+
+      <div class="overlay__bottom">
+        <div class="overlay__cta-row">
+          <a class="btn btn--primary" href="tel:+919571980013"><i class="fa-solid fa-phone"></i> 9571980013</a>
+          <a class="btn btn--outline" href="https://wa.me/919571943750" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+        <div class="overlay__meta">English Medium • Co-educational • RBSE Board • Nursery to Class XII</div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <div class="reveal from-left">
+          <div class="hero__badge">⭐ Admissions Open 2026–27</div>
+          <h1 style="margin-top: 14px">
+            Your Child's <span class="text-maroon">Future</span> Begins Here!
+          </h1>
+          <div class="hero__tagline">Where Learning Meets Excellence</div>
+          <p class="hero__copy lead">
+            <strong>Galaxy International School</strong> — Nurturing Future Toppers &amp; Leaders from Nursery to Class
+            XII
+            | RBSE Board | English Medium | JEE–NEET Foundation Coaching
+          </p>
+
+          <div class="pill-row" style="margin-top: 12px">
+            <span class="pill">📚 Nursery–XII</span>
+            <span class="pill">🏆 RBSE Board</span>
+            <span class="pill">🔬 JEE–NEET</span>
+            <span class="pill">🏠 Hostel</span>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="admissions.html"><i class="fa-solid fa-graduation-cap"></i> Apply for
+              Admission</a>
+            <a class="btn btn--outline" href="tel:+919571980013"><i class="fa-solid fa-phone"></i> Call: 9571980013</a>
+          </div>
+
+          <div class="ticker" aria-label="Admissions ticker" style="margin-top: 18px">
+            <div class="ticker__track" aria-hidden="true">
+              <div class="ticker__item">✦ Admissions Open 2026–27</div>
+              <div class="ticker__item">✦ Nursery to Class XII</div>
+              <div class="ticker__item">✦ JEE–NEET Coaching</div>
+              <div class="ticker__item">✦ RBSE Board</div>
+              <div class="ticker__item">✦ English Medium</div>
+              <div class="ticker__item">✦ Smart Classrooms</div>
+              <div class="ticker__item">✦ Hostel Available</div>
+              <div class="ticker__item">✦ 9571980013</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right reveal from-right">
+          <div class="hero__shape--shield" aria-hidden="true"></div>
+          <div class="hero__shape--dots" aria-hidden="true"></div>
+          <div class="hero__lottie">
+            <img src="images/confident-teacher-explaining-lesson-pupils.jpg" alt="Galaxy International School" class="hero-image-static" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section bg-maroon">
+      <div class="container">
+        <div class="stats">
+          <div class="stat reveal from-bottom">
+            <div class="stat__icon">🎓</div>
+            <div class="stat__number" data-count="1500" data-suffix="+">0+</div>
+            <div class="stat__label">Students Enrolled</div>
+          </div>
+          <div class="stat reveal from-bottom">
+            <div class="stat__icon">👨‍🏫</div>
+            <div class="stat__number" data-count="50" data-suffix="+">0+</div>
+            <div class="stat__label">Qualified Faculty</div>
+          </div>
+          <div class="stat reveal from-bottom">
+            <div class="stat__icon">📅</div>
+            <div class="stat__number" data-count="15" data-suffix="+">0+</div>
+            <div class="stat__label">Years of Excellence (Est. 2009)</div>
+          </div>
+          <div class="stat reveal from-bottom">
+            <div class="stat__icon">🏆</div>
+            <div class="stat__number" data-count="100" data-suffix="%">0%</div>
+            <div class="stat__label">Board Pass Results</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="section-title center">
+          <span class="section-label label-shimmer">Why Choose GIS</span>
+          <h2>Why Parents Trust GIS</h2>
+          <p class="section-subtitle">From Classroom to Career — We Prepare Every Child, Every Step.</p>
+        </div>
+
+        <div class="features">
+          <article class="card feature reveal from-bottom" data-tilt>
+            <div class="feature__icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>RBSE Curriculum</h3>
+            <p>Rajasthan Board foundation with structured learning and strong exam preparation.</p>
+          </article>
+          <article class="card feature reveal from-bottom" data-tilt>
+            <div class="feature__icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3>Smart Classrooms</h3>
+            <p>Digital learning tools to make concepts clear, engaging, and memorable.</p>
+          </article>
+          <article class="card feature reveal from-bottom" data-tilt>
+            <div class="feature__icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <h3>Safe Hostel</h3>
+            <p>Secure, hygienic, supervised hostel environment focused on student wellbeing.</p>
+          </article>
+          <article class="card feature reveal from-bottom" data-tilt>
+            <div class="feature__icon"><i class="fa-solid fa-futbol"></i></div>
+            <h3>Sports &amp; Activities</h3>
+            <p>Football, athletics, karate, indoor games—holistic development beyond academics.</p>
+          </article>
+          <article class="card feature reveal from-bottom" data-tilt>
+            <div class="feature__icon"><i class="fa-solid fa-microscope"></i></div>
+            <h3>JEE–NEET Coaching</h3>
+            <p>Integrated foundation coaching from Classes 8–12—foundation to advanced level.</p>
+          </article>
+          <article class="card feature reveal from-bottom" data-tilt>
+            <div class="feature__icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Holistic Development</h3>
+            <p>Values, discipline, confidence, leadership—nurturing future toppers &amp; leaders.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section bg-parchment">
+      <div class="container split">
+        <div class="reveal from-left" style="min-height: 340px">
+          <div style="animation: lottieFloat 4.8s ease-in-out infinite">
+            <img src="images/confident-teacher-explaining-lesson-pupils.jpg" alt="About GIS" class="about-image-static" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="reveal from-right">
+          <span class="section-label">About GIS</span>
+          <h2 style="margin-top: 12px">Building Future Toppers &amp; Leaders Since 2009</h2>
+          <p class="muted">
+            Founded with a mission to provide quality English medium education in Auwa, Pali, Rajasthan—Galaxy
+            International School
+            blends strong RBSE academics with modern learning and integrated JEE–NEET foundation coaching.
+          </p>
+
+          <ul class="checklist" style="margin-top: 14px">
+            <li><i class="fa-solid fa-check"></i><span>English Medium, Co-educational School</span></li>
+            <li><i class="fa-solid fa-check"></i><span>RBSE Board — Nursery to Class XII (Science)</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Established 2009</span></li>
+            <li><i class="fa-solid fa-check"></i><span>JEE–NEET Integrated Coaching</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Premium Campus, Auwa Pali, Rajasthan</span></li>
+          </ul>
+
+          <div style="margin-top: 16px">
+            <a class="btn btn--primary" href="about.html">Learn More About Us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title center">
+          <span class="section-label">Programs</span>
+          <h2>Academics Designed for Every Stage</h2>
+          <p class="section-subtitle">Nursery to Class XII (Science) with integrated foundation coaching for competitive
+            success.</p>
+        </div>
+
+        <div class="flip-grid">
+          <div class="flip reveal from-bottom" data-flip>
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="flip__strip"></div>
+                <h3 style="margin: 0">🎒 Primary School</h3>
+                <p class="muted" style="margin: 0">Nursery – V</p>
+                <div class="flip__hint">Tap / hover to explore →</div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3 style="margin: 0; color: var(--gold-light)">Primary (Nursery–V)</h3>
+                <ul>
+                  <li>Play-based learning &amp; English communication</li>
+                  <li>Strong foundation in core concepts</li>
+                  <li>Individual attention to each child</li>
+                </ul>
+                <a class="btn" href="admissions.html">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip reveal from-bottom" data-flip>
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="flip__strip"></div>
+                <h3 style="margin: 0">📘 Secondary School</h3>
+                <p class="muted" style="margin: 0">VI – X</p>
+                <div class="flip__hint">Tap / hover to explore →</div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3 style="margin: 0; color: var(--gold-light)">Middle &amp; Secondary</h3>
+                <ul>
+                  <li>RBSE curriculum with exam discipline</li>
+                  <li>Foundation for higher classes</li>
+                  <li>Values, personality &amp; skills</li>
+                </ul>
+                <a class="btn" href="academics.html">Explore Curriculum</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip reveal from-bottom" data-flip>
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="flip__strip"></div>
+                <h3 style="margin: 0">🔬 Senior Secondary</h3>
+                <p class="muted" style="margin: 0">XI – XII (Science)</p>
+                <div class="flip__hint">Tap / hover to explore →</div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3 style="margin: 0; color: var(--gold-light)">XI–XII Science (PCM, PCB)</h3>
+                <ul>
+                  <li>Board exam focus + concept mastery</li>
+                  <li>Lab work &amp; problem solving</li>
+                  <li>Career guidance and mentoring</li>
+                </ul>
+                <a class="btn" href="academics.html#science">Science Stream</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip reveal from-bottom" data-flip>
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="flip__strip"></div>
+                <h3 style="margin: 0">🏆 JEE–NEET Foundation</h3>
+                <p class="muted" style="margin: 0">VIII – XII</p>
+                <div class="flip__hint">Tap / hover to explore →</div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3 style="margin: 0; color: var(--gold-light)">Integrated Coaching</h3>
+                <ul>
+                  <li>Expert faculty and structured practice</li>
+                  <li>Foundation to advanced preparation</li>
+                  <li>School + coaching in one plan</li>
+                </ul>
+                <a class="btn" href="admissions.html">Enquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY PREVIEW -->
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="section-title center">
+          <span class="section-label">Campus Life</span>
+          <h2>Life at Galaxy International School</h2>
+          <p class="section-subtitle">A premium campus that supports modern learning and holistic growth.</p>
+        </div>
+
+        <div class="photo-grid">
+          <a class="photo-tile reveal from-bottom" href="gallery.html" aria-label="Premium campus">
+            <img src="images/gallery/GIS (4).png" alt="Premium campus" loading="lazy" />
+
+          </a>
+          <a class="photo-tile reveal from-bottom" href="gallery.html" aria-label="Modern learning">
+            <img src="images/gallery/GIS (2).jpeg" alt="Modern learning" loading="lazy" />
+
+          </a>
+          <a class="photo-tile reveal from-bottom" href="gallery.html" aria-label="Holistic development">
+            <img src="images/gallery/GIS-(3).jpeg" alt="Holistic development" loading="lazy" />
+
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 18px">
+          <a class="btn btn--primary" href="gallery.html">View Full Gallery →</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="section-title center">
+          <span class="section-label">Testimonials</span>
+          <h2>What Parents Say</h2>
+          <p class="section-subtitle">Trusted by families for discipline, results, and overall growth.</p>
+        </div>
+
+        <div class="swiper reveal from-bottom" aria-label="Testimonials carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card" style="padding: 22px; border-left: 5px solid var(--maroon)">
+                <div
+                  style="font-family: var(--font-heading); font-weight: 900; font-size: 70px; line-height: 0.8; color: rgba(139, 0, 0, 0.15)">
+                  “
+                </div>
+                <div style="color: var(--gold)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p style="margin-top: 10px; font-style: italic">
+                  Excellent teachers and discipline. My child’s confidence and English communication improved a lot.
+                </p>
+                <div
+                  style="margin-top: 10px; font-family: var(--font-subheading); font-weight: 800; color: var(--maroon)">
+                  Parent Name</div>
+                <div class="muted">Parent of Class VIII Student</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card" style="padding: 22px; border-left: 5px solid var(--maroon)">
+                <div
+                  style="font-family: var(--font-heading); font-weight: 900; font-size: 70px; line-height: 0.8; color: rgba(139, 0, 0, 0.15)">
+                  “
+                </div>
+                <div style="color: var(--gold)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p style="margin-top: 10px; font-style: italic">
+                  Great environment with smart classrooms and strong RBSE results. The school really cares about
+                  students.
+                </p>
+                <div
+                  style="margin-top: 10px; font-family: var(--font-subheading); font-weight: 800; color: var(--maroon)">
+                  Parent Name</div>
+                <div class="muted">Parent of Class X Student</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card" style="padding: 22px; border-left: 5px solid var(--maroon)">
+                <div
+                  style="font-family: var(--font-heading); font-weight: 900; font-size: 70px; line-height: 0.8; color: rgba(139, 0, 0, 0.15)">
+                  “
+                </div>
+                <div style="color: var(--gold)"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p style="margin-top: 10px; font-style: italic">
+                  Hostel facility is safe and hygienic. Teachers guide students well for boards and competitive exams.
+                </p>
+                <div
+                  style="margin-top: 10px; font-family: var(--font-subheading); font-weight: 800; color: var(--maroon)">
+                  Parent Name</div>
+                <div class="muted">Parent of Class XI Student</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CTA BANNER -->
+    <section class="section"
+      style="background: linear-gradient(135deg, var(--maroon-deep), var(--maroon)); overflow: hidden">
+      <div class="container reveal from-bottom" style="position: relative">
+        <div aria-hidden="true" style="
+              position: absolute;
+              right: -90px;
+              top: -70px;
+              width: 280px;
+              height: 280px;
+              opacity: 0.08;
+              border: 2px solid var(--gold-light);
+              clip-path: polygon(50% 0%, 85% 14%, 92% 44%, 76% 85%, 50% 100%, 24% 85%, 8% 44%, 15% 14%);
+              transform: rotate(14deg);
+            "></div>
+
+        <h2 style="color: var(--gold-light); font-weight: 900; font-size: clamp(2.1rem, 4vw, 3rem)">Admissions Open
+          2026–27</h2>
+        <p
+          style="color: rgba(253, 248, 240, 0.9); font-family: var(--font-subheading); font-size: 18px; margin-top: 8px">
+          Nursery to Class XII | JEE–NEET Coaching | Limited Seats
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px">
+          <a class="btn" href="admissions.html"
+            style="background: var(--gold-light); color: var(--maroon-deep); border: 2px solid rgba(232, 192, 96, 0.75)">Apply
+            Now — It’s Free</a>
+          <a class="btn" href="tel:+919571980013"
+            style="background: transparent; color: rgba(253, 248, 240, 0.95); border: 2px solid rgba(253, 248, 240, 0.6)"><i
+              class="fa-solid fa-phone"></i> Call: 9571980013</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Galaxy International School logo" onerror="this.style.display='none'" />
+          <h3 class="footer__brand-title">Galaxy International School</h3>
+          <p class="footer__blurb">
+            A warm, disciplined, English medium RBSE school in Auwa Pali, nurturing future toppers &amp; leaders with
+            strong academics and holistic development.
+          </p>
+          <div class="social" aria-label="Social links">
+            <a class="facebook" href="https://www.facebook.com/gisssschoolauwa" target="_blank" rel="noopener"
+              aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="instagram" href="https://www.instagram.com/gisauwa2009/" target="_blank" rel="noopener"
+              aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="whatsapp" href="https://wa.me/919571980013" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__heading">Programs</div>
+          <ul class="footer__list">
+            <li>RBSE School: Nursery to XII</li>
+            <li>JEE Foundation | NEET Foundation</li>
+            <li>Smart Classrooms | Hostel</li>
+            <li>Sports &amp; Activities | Transport</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__heading">Contact Info</div>
+          <ul class="footer__list">
+            <li><i class="fa-solid fa-location-dot"></i> Jaitpura Choraha, Marwar Junction Road, Auwa, Pali, Rajasthan
+            </li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919571980013">9571980013</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:gis.auwa7@gmail.com">gis.auwa7@gmail.com</a>, <a
+                href="mailto:gisprincipal77@gmail.com">gisprincipal77@gmail.com</a></li>
+            <li><i class="fa-solid fa-clock"></i> Mon–Sat: 8 AM – 5 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <div>© 2026 HENU OS Private Limited. All Rights Reserved.</div>
+        <div>“Knowledge is Power”</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919571943750" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"
+    title="Chat with Us" style="
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        width: 58px;
+        height: 58px;
+        border-radius: 999px;
+        background: #25d366;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+        z-index: 1500;
+        animation: wpPulse 1.9s ease-out infinite;
+      ">
+    <i class="fa-brands fa-whatsapp" style="font-size: 26px"></i>
+  </a>
+
+  <button id="scrollTop" aria-label="Scroll to top" style="
+        position: fixed;
+        left: 16px;
+        bottom: 22px;
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        background: var(--maroon);
+        border: 2px solid var(--gold);
+        color: var(--gold-light);
+        display: grid;
+        place-items: center;
+        box-shadow: var(--shadow-md);
+        z-index: 1500;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+        transition: var(--transition);
+      " class="">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // inline minimal visibility toggle class hook (kept tiny to avoid extra CSS file)
+    (() => {
+      const btn = document.getElementById("scrollTop");
+      if (!btn) return;
+      const set = () => {
+        const show = window.scrollY > 300;
+        btn.style.opacity = show ? "1" : "0";
+        btn.style.pointerEvents = show ? "auto" : "none";
+        btn.style.transform = show ? "translateY(0)" : "translateY(10px)";
+      };
+      set();
+      window.addEventListener("scroll", set, { passive: true });
+    })();
+  </script>
+
+  <script>
+    // 3D tilt for cards (feature/faculty/program)
+    (() => {
+      const cards = Array.from(document.querySelectorAll("[data-tilt]"));
+      if (cards.length === 0) return;
+      const isTouch = matchMedia("(hover: none)").matches;
+      if (isTouch) return;
+
+      const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+      cards.forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const r = card.getBoundingClientRect();
+          const px = (e.clientX - r.left) / r.width;
+          const py = (e.clientY - r.top) / r.height;
+          const rotY = clamp((px - 0.5) * 16, -8, 8);
+          const rotX = clamp((0.5 - py) * 16, -8, 8);
+          card.style.transform = `translateY(-8px) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+        });
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // Flip cards on tap for mobile
+    (() => {
+      const isTouch = matchMedia("(hover: none)").matches;
+      if (!isTouch) return;
+      document.querySelectorAll("[data-flip]").forEach((wrap) => {
+        wrap.addEventListener("click", () => wrap.classList.toggle("is-flipped"));
+      });
+    })();
+  </script>
+</body>
+
+</html>

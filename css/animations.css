@@ -1,0 +1,87 @@
+/* ==========================================================================
+   GIS — Animations (keyframes + reveal helpers)
+   ========================================================================== */
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes marqueeTick {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes wpPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 16px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes lottieFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+.label-shimmer {
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  background-size: 200%;
+  animation: shimmer 2.5s infinite;
+  color: var(--maroon-deep);
+  border: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transition: 0.7s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.from-bottom {
+  transform: translateY(50px);
+}
+.reveal.from-left {
+  transform: translateX(-60px);
+}
+.reveal.from-right {
+  transform: translateX(60px);
+}
+.reveal.scale-in {
+  transform: scale(0.88);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
