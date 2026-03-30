@@ -12,6 +12,21 @@
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contact__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .admission__process-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+
+  .about__mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -81,6 +96,31 @@
   .ticker__track {
     animation-duration: 18s;
   }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact__social {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact__social .btn {
+    width: 100%;
+  }
+
+  /* Contact page header spacing fix */
+  .section[style*="background: linear-gradient"] {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .admission__process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -107,6 +147,41 @@
   .pill {
     padding: 6px 10px;
     font-size: 11px;
+  }
+
+  .admission__process-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .about__mission-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about__timeline-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.08);
+  }
+
+  .about__timeline-item:last-child {
+    border-bottom: 0;
+  }
+
+  .about__year {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    color: var(--maroon);
+    font-size: 24px;
+  }
+
+  /* Overriding inline styles for About timeline if needed */
+  .about__timeline > div {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
   }
 }
 
